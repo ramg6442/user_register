@@ -26,7 +26,7 @@ app.post('/api/insert', (req, res)=> {
   con.query(sql,[email,phone,name, password],(err,result)=>
   {
       console.log(result);
-    res.send('Success');
+    res.send('Success!');
   });
   
 });
