@@ -25,7 +25,7 @@ app.post('/api/insert', (req, res)=> {
   const sql = "INSERT INTO register (email,phone, name, password) VALUES (?, ?, ?, ?)";
   con.query(sql,[email,phone,name, password],(err,result)=>
   {
-      console.log(err);
+      console.log(result);
     res.send('Success!');
   });
   
