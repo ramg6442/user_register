@@ -17,7 +17,7 @@ function Register() {
         password:password,})
         .then(()=>{
            alert("Data insert successfully,please Check your databases") ;
-           
+           console.log("sucessful");
         });
     }
 
